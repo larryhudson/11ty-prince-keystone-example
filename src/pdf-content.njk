@@ -1,0 +1,15 @@
+---
+layout: pdf-layout.njk
+---
+
+{% set sectionBeforeToc = keystonePages[0] %}
+{% keystoneDocument sectionBeforeToc.content.document %}
+
+<h2 class="contents">Contents</h2>
+{% include 'partials/pdf/table-of-contents.njk' %}
+
+{% set sectionsAfterToc = keystonePages.slice(1) %}
+{% for section in sectionsAfterToc %}
+<h2 class="page-break-before" id="section-{{loop.index}}">{{section.title}}</h2>
+{% keystoneDocument section.content.document %}
+{% endfor %}

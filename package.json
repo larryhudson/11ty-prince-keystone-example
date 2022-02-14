@@ -1,0 +1,24 @@
+{
+  "name": "pdf-plugin-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @11ty/eleventy --watch --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@keystone-6/document-renderer": "^1.0.0",
+    "dotenv": "^16.0.0",
+    "eleventy-plugin-prince-pdf": "github:larryhudson/eleventy-plugin-prince-pdf",
+    "eleventy-shortcode-keystone-document": "github:larryhudson/eleventy-shortcode-keystone-document",
+    "graphql-request": "^4.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

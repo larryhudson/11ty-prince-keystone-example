@@ -1,0 +1,9 @@
+<nav class="section-nav">
+    <ul>
+        {% for section in keystonePages %}
+            <li>
+                <a href="/{{ section.slug }}/" {% if section.url === page.url %} aria-current="page" {% endif %}>{{ section.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>
